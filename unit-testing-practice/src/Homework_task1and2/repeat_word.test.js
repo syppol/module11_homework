@@ -1,12 +1,10 @@
 import { repeatWord } from "./repeat_word.js";
 
 describe("positive test suit", () => {
-    it('repeat word for 3 times', () => {
-        expect(repeatWord("Hello", 3)).toBe("Hello, Hello, Hello");
-    }),
-    it('repeat word for 1 time', () => {
+    it('repeat word for 1 and 3 times', () => {
         expect(repeatWord("#n,k/l.", 1)).toBe("#n,k/l.");
-    })
+        expect(repeatWord("Hello", 3)).toBe("Hello, Hello, Hello");
+    });
 });
 
 describe("negative test suit", () => {
